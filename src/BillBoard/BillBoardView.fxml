@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillBoard.BillBoardViewController">
+   <children>
+      <Label layoutX="238.0" layoutY="14.0" text="Bill Board">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radPending" layoutX="43.0" layoutY="81.0" mnemonicParsing="false" text="Pending">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radPaid" layoutX="137.0" layoutY="81.0" mnemonicParsing="false" text="Paid" toggleGroup="$toggle" />
+      <Button layoutX="212.0" layoutY="77.0" mnemonicParsing="false" onAction="#doSearchPendingAndPaid" text="Search" />
+      <Button layoutX="483.0" layoutY="77.0" mnemonicParsing="false" onAction="#doSearchBillHistory" prefHeight="26.0" prefWidth="104.0" text="Bill History" />
+      <TextField fx:id="txtMobile" layoutX="320.0" layoutY="77.0" />
+      <Label layoutX="320.0" layoutY="55.0" text="Mobile Number" />
+      <TableView fx:id="tableData" layoutX="2.0" layoutY="122.0" prefHeight="271.0" prefWidth="600.0" />
+      <Button layoutX="264.0" layoutY="411.0" mnemonicParsing="false" onAction="#doExport" prefHeight="26.0" prefWidth="76.0" text="Export" />
+   </children>
+</AnchorPane>

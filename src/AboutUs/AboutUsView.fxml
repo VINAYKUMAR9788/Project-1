@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutUs.AboutUsViewController">
+   <children>
+      <Label layoutX="234.0" layoutY="14.0" text="About Us">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="126.0" fitWidth="155.0" layoutX="41.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Vinay.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="240.0" layoutY="64.0" prefHeight="98.0" prefWidth="228.0" text="This Newspaper Agency Automation &#10;desktop application is developed by &#10;me under the humble guidance of &#10;Rajesh bansal Sir (Author of Real Java)&#10;&#10;" />
+      <ImageView fitHeight="132.0" fitWidth="131.0" layoutX="411.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@rajeshbansalSir.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="58.0" layoutY="227.0" prefHeight="98.0" prefWidth="228.0" />
+      <Label layoutX="73.0" layoutY="182.0" text="Vinay Kumar" />
+      <Label layoutX="443.0" layoutY="348.0" text="Rajesh Bansal" />
+      <Label layoutX="434.0" layoutY="366.0" text="(Author of Real java)" />
+   </children>
+</AnchorPane>
